@@ -1,0 +1,228 @@
+h1, h2, h3, h4, h5, h6 {
+	color: #333;
+}
+h1 {
+	font-size: 2.5em;
+	margin: 0;
+}
+h2 {
+	font-size: 2.2em;
+	margin: 0 0 1em;
+	padding: 2em 0 0em;
+	border-bottom: #ccc solid 1px;
+}
+h3 {
+	font-size: 1.7em;
+	margin: 0.8em 0 0 0;
+}
+h4 {
+	font-size: 1.4em;
+	margin: 0.5em 0 0 0;
+}
+h5 {
+	font-size: 1.2em;
+	margin: 0.3em 0 0 0;
+}
+h6 {
+	font-size: 1em;
+	margin: 0.1em 0 0 0;
+}
+
+p, ul { margin: 4px 0 14px 0; }
+
+body {
+	margin: 0;
+	font: 14px/1.5 "Quando", Helvetica, Arial, sans-serif;
+	color: #444;
+	background: #edb url('/images/wood.jpg');
+}
+
+a img { border: 0; }  /* IE8 */
+a {
+	color: #3ac;
+	text-decoration: none;
+}
+a:hover { color: #079; }
+
+#main {
+	max-width: 920px;
+	margin: 30px auto;
+}
+.box {
+	background: #fff;
+	margin: 10px 1%;
+	border: #aaa solid 1px;
+	border-radius: 2px;
+	box-shadow: 0 0 2px #aaa;
+}
+.demi {
+	float: left;
+	width: 439px;
+}
+.shade {
+	background: #eee;
+	text-shadow: 1px 3px 3px #fff;
+	box-shadow: 0 2px 1px -1px #ddd, inset 0 2px 1px -1px #ddd;
+}
+.big {
+	font-size: 1.5em;
+}
+header, section, #section ul {
+	padding: 30px 4%;
+	border-bottom: #ddd solid 1px;
+}
+footer {
+	clear: both;
+	text-align: center;
+}
+
+blockquote {
+	margin: 0;
+	padding: 10px 10px 0;
+	text-align: center;
+	font-style: italic;
+	font: 45px/0.8 "Italianno", Helvetica, Arial, sans-serif;
+	text-shadow: -0.7px -0.7px 0.7px #000;
+	color: #555;
+}
+.author {
+	text-align: right;
+	padding: 10px 20px 0;
+	font-size: 80%;
+}
+
+pre {
+	padding: 8px 12px;
+	background: #222;
+	color: #ddd;
+	border-radius: 3px;
+	font-family: "Lucida Sans", Monaco, Lucida Console, Terminal, monospace;
+	text-shadow: 0 1px 0 #444;
+	border: 1px solid #111;
+	overflow: auto;
+}
+
+table {
+	border-collapse: collapse;
+	text-align: left;
+}
+tr {
+	border: 1px solid #ac2;
+	background: #ffe;
+}
+tr:nth-child(odd) { background: #efd; }
+th, td { padding: 2px 30px 2px 6px; }
+th:last-child, td:last-child { padding: 2px 6px; }
+th { background: #ac2; }
+tr.meta {
+	border: 0;
+	background: #fff;
+}
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	outline: none;
+	height: 1px;
+	margin: 0 0 20px;
+}
+
+header > a, header > a:hover { color: inherit; }
+header div {
+	display: inline-block;
+	vertical-align: middle;
+}
+header h1 { line-height: 40px; }
+header span { padding-left: 0.3em; }
+header img {
+	display: inline-block;
+	vertical-align: middle;
+	height: 65px;
+	width: 65px;
+	margin: 0 10px 0 0;
+}
+
+nav {
+	float: right;
+	text-transform: uppercase;
+	color: #777;
+}
+nav ul {
+	clear: none;
+	padding: 23px 0;
+	margin: 0;
+}
+nav li { display: inline-block; }
+nav a { padding: 50px 1em; }
+
+#slider ul {
+	list-style: none;
+	padding: 15px 4%;
+	margin: 0;
+	text-align: center;
+}
+#slider li {
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	padding: 10px;
+	margin: 0 2px;
+	text-align: center;
+	border: #ccc solid 1px;
+	border-radius: 45px;
+}
+#slider li:hover { border-color: #888; }
+#slider a:focus > li { border-color: #888; }
+#slider a:focus { outline: 0; }
+#slider li.double { width: 100px; }
+#slideswrap {
+	margin: 0;
+	padding: 0 1em;
+	border: #ddd solid 1px;
+	border-width: 1px 0;
+	overflow-x: scroll;
+	padding: 0;
+	clear: both;
+}
+#slides { width: 3000px; }
+#slides > div {
+	display: inline-block;
+	float: left;
+	width: 240px;
+	padding: 0 20px;
+}
+#slider > div { position: relative; }
+#slider .cover { position: absolute; }
+
+#slider2 {
+	height: 247px;
+}
+.cover {
+	height: 100%;
+	width: 88%;
+	padding: 0 6%;
+	text-align: center;
+	background: #fff;
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	box-align: center;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	box-pack: center;
+}
+.cover h3 { margin: 0; }
+.cover p { font-style: italic; }
+
+.portfolio img {
+	vertical-align: middle;
+	margin: 0 1em;
+	max-width: 90%;
+	height: auto;
+}
+
+@media (max-width: 920px) {
+	.demi { width: 98%; box-sizing: border-box; }
+}
