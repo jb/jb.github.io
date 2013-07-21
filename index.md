@@ -30,8 +30,8 @@ extra: |
   <div id="slideswrap">
   <div id="slides">
   <div id="text-editor">
-  <h4>Text Editor</h4>
-  <p>Website creation tools may be helpful to a degree, but every good web developer should know what goes on in their code. Using a text editor gives much finer control over the design.</p>
+  <h4>Vim</h4>
+  <p>Website creation tools may be helpful to a degree, but every good web developer should know what goes on in their code. Using a good text editor gives much finer control over the design.</p>
   </div>
   <div id="git">
   <h4>Git</h4>
