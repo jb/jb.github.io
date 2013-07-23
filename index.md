@@ -49,8 +49,7 @@ extra: |
   </div>
   </div>
   </div>
-  </div>
-  <div class="demi box">
+  </div><div class="demi box">
   <div id="slider2">
   <div class="cover">
   <div>
