@@ -44,6 +44,9 @@ a {
 }
 a:hover { color: #079; }
 
+::-moz-selection { background: #bdf; }
+::selection { background: #bdf; }
+
 #main {
 	max-width: 920px;
 	margin: 30px auto;
@@ -62,7 +65,7 @@ a:hover { color: #079; }
 }
 .shade {
 	background: #eee;
-	text-shadow: 1px 3px 3px #fff;
+	text-shadow: 1px 2px 2px #fff;
 	box-shadow: 0 2px 1px -1px #ddd, inset 0 2px 1px -1px #ddd;
 }
 .big {
