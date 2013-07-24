@@ -196,7 +196,10 @@ nav a { padding: 50px 1em; }
 	padding: 0 20px;
 }
 #slider > div { position: relative; }
-#slider .cover { position: absolute; }
+#slider .cover {
+	position: absolute;
+	display: none;
+}
 
 #slider2 {
 	height: 247px;

@@ -8,7 +8,6 @@ $('.email').each(function() {
 
 
 $('#slideswrap').css('overflow-x', 'hidden');
-$('#slider ul li:first').addClass('active');
 $('#slider ul a').click(function() {
 	if ( $('#slider .cover').is(':visible') ) {
 		$('#slider .cover').fadeOut(TIME);
@@ -31,4 +30,5 @@ $(window).resize(function() {
 	clearTimeout(resizeTimer);
 	resizeTimer = setTimeout(adjust_slides, 50);
 });
+$('#slider .cover').css('display', '-webkit-box').css('display', 'box');
 setTimeout(adjust_slides, 50);
