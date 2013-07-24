@@ -15,9 +15,11 @@ extra: |
   <a href="#rails"><li>
   <img src="/images/rails.png" height="50" width="38" alt="Ruby on Rails" title="Ruby on Rails"/>
   </li></a>
-  <a href="#haml-sass"><li class="double">
+  <a href="#haml-sass"><li>
   <img src="/images/haml.png" height="50" width="43" alt="Haml" title="Haml"/>
-  <img src="/images/sass.png" height="50" width="46" alt="Sass" title="Sass"/>
+  </li></a>
+  <a href="#jquery"><li>
+  <img src="/images/jquery.png" height="50" width="50" alt="jQuery" title="jQuery"/>
   </li></a>
   </ul>
   <div>
@@ -44,6 +46,10 @@ extra: |
   <div id="haml-sass">
   <h4>Haml &amp; Sass</h4>
   <p>Haml and Sass are markup abstraction languages that allow engaging layouts to be created while keeping the code clean, simple, and bug-free.</p>
+  </div>
+  <div id="jquery">
+  <h4>jQuery</h4>
+  <p>jQuery is a JavaScript library that makes it easy to create interactive web content without using Flash. I wrote this slider in jQuery myself.</p>
   </div>
   </div>
   </div>
