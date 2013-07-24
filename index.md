@@ -6,8 +6,8 @@ extra: |
   <div class="demi box">
   <div id="slider">
   <ul class="shade">
-  <a href="#text-editor"><li>
-  <img src="/images/editor.png" height="50" width="50" alt="Text Editor" title="Text Editor"/>
+  <a href="#vim"><li>
+  <img src="/images/vim.png" height="50" width="50" alt="Vim" title="Vim"/>
   </li></a>
   <a href="#git"><li>
   <img src="/images/git.png" height="50" width="50" alt="Git" title="Git"/>
@@ -29,9 +29,9 @@ extra: |
   </div>
   <div id="slideswrap">
   <div id="slides">
-  <div id="text-editor">
+  <div id="vim">
   <h4>Vim</h4>
-  <p>Website creation tools may be helpful to a degree, but every good web developer should know what goes on in their code. Using a good text editor gives much finer control over the design.</p>
+  <p>Graphical <abbr title="Integrated Development Environments">IDEs</abbr> may be helpful to a degree, but every good developer should know what goes on in their code. Using a good text editor gives much finer control over the design.</p>
   </div>
   <div id="git">
   <h4>Git</h4>
