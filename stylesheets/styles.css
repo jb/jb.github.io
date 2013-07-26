@@ -223,11 +223,20 @@ nav a { padding: 50px 1em; }
 .cover h3 { margin: 0; }
 .cover p { font-style: italic; }
 
+.portfolio { margin: -1em; }
 .portfolio img {
 	vertical-align: middle;
-	margin: 0 1em;
+	padding: 1em;
 	max-width: 90%;
 	height: auto;
+}
+.portfolio div {
+	display: inline-block;
+	vertical-align: middle;
+}
+.portfolio div img {
+	display: block;
+	margin: 0 auto;
 }
 
 @media (max-width: 920px) {
