@@ -68,16 +68,12 @@ a:hover { color: #079; }
 	text-shadow: 1px 2px 2px #fff;
 	box-shadow: 0 2px 1px -1px #ddd, inset 0 2px 1px -1px #ddd;
 }
-.big {
-	font-size: 1.5em;
-}
+.big { font-size: 1.5em; }
 header, section, #section ul {
 	padding: 30px 4%;
 	border-bottom: #ddd solid 1px;
 }
-footer {
-	text-align: center;
-}
+footer { text-align: center; }
 
 blockquote {
 	margin: 0;
@@ -201,9 +197,7 @@ nav a { padding: 50px 1em; }
 	display: none;
 }
 
-#slider2 {
-	height: 247px;
-}
+#slider2 { height: 247px; }
 .cover {
 	height: 100%;
 	width: 88%;
