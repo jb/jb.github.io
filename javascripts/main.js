@@ -8,8 +8,8 @@ $('body').on('click', '#slider ul a', function() {
 	}
 	$('#slider ul li.active').removeClass('active')
 	                         .animate({backgroundColor: '#eee'}, TIME);
-	$('> li', this).addClass('active')
-	               .animate({backgroundColor: '#fd8'}, TIME);
+	$(this).parent().addClass('active')
+	                .animate({backgroundColor: '#fd8'}, TIME);
 	offset = $(this.hash).offset().left - $('#slides').offset().left;
 	$('#slideswrap').animate({scrollLeft:offset}, TIME);
 	return false;

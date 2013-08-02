@@ -163,14 +163,14 @@ nav a { padding: 50px 1em; }
 }
 #slider li {
 	display: inline-block;
-	height: 50px;
-	width: 50px;
-	padding: 10px;
+	height: 70px;
+	width: 70px;
 	margin: 0 2px;
 	text-align: center;
 	border: #ccc solid 1px;
 	border-radius: 45px;
 }
+#slider img { padding: 10px; }
 #slider li:hover { border-color: #888; }
 #slider a:focus > li { border-color: #888; }
 #slider a:focus { outline: 0; }
