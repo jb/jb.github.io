@@ -4,12 +4,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 {% for item in site.pages do %}
 <url>
-	<loc>{{ item.url }}</loc>
+	<loc>{{ item.url | split:'index.html' | first }}</loc>
 </url>
 {% endfor %}
 {% for item in site.posts do %}
 <url>
-	<loc>{{ item.url }}</loc>
+	<loc>{{ item.url | split:'index.html' | first }}</loc>
 </url>
 {% endfor %}
 </urlset> 
