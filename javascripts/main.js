@@ -40,10 +40,12 @@ $(init);
 
 $('body').on('click', 'header a', function() {
 	var href = $(this).attr('href');
-	history.pushState(null, null, href);
-	$('#main').load(href + ' #main', function() {
-		$(init);
-		ga('send', 'pageview');
+	$('#main').load(href + ' #main', function(response, status, xhr) {
+		if (status == 'success') {
+			history.pushState(null, null, href);
+			$(init);
+			ga('send', 'pageview');
+		}
 	});
 	return false;
 });
