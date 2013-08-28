@@ -1,22 +1,24 @@
 TIME = 300  // Number of milliseconds an action takes
 
 
-$('body').on('click', '#slider ul a', function() {
-	if ( $('#slider .cover').is(':visible') ) {
-		$('#slider .cover').fadeOut(TIME);
+$('body').on('click', '.slider ul a', function() {
+	slider = $(this).parents('.slider');
+	if ( slider.find('.cover').is(':visible') ) {
+		slider.find('.cover').fadeOut(TIME);
 		var TIME = 0;
 	}
-	$('#slider ul li.active').removeClass('active')
-	                         .animate({backgroundColor: '#eee'}, TIME);
+	slider.find('ul li.active').removeClass('active')
+	                           .animate({backgroundColor: '#eee'}, TIME);
 	$(this).parent().addClass('active')
 	                .animate({backgroundColor: '#fd8'}, TIME);
-	offset = $(this.hash).offset().left - $('#slides').offset().left;
-	$('#slideswrap').animate({scrollLeft:offset}, TIME);
+	offset = $(this.hash).offset().left - slider.find('.slides').offset().left;
+	slider.find('.slideswrap').animate({scrollLeft:offset}, TIME);
 	return false;
 });
 function adjust_slides() {
-	width = $('#slider').width();
-	$('#slides').children('div').width(width-40);
+	$('.slider').each(function() {
+		$(this).find('.slides div').css('width', $(this).width()-40);
+	});
 }
 var resizeTimer;
 $(window).resize(function() {
@@ -26,8 +28,8 @@ $(window).resize(function() {
 
 
 function init() {
-	$('#slideswrap').css('overflow-x', 'hidden');
-	$('#slider .cover').css('display', '-webkit-box').css('display', 'box');
+	$('.slideswrap').css('overflow-x', 'hidden');
+	$('.slider .cover').css('display', '-webkit-box').css('display', 'box');
 	setTimeout(adjust_slides, 50);
 
 	$('.email').each(function() {
